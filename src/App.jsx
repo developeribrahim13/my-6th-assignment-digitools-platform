@@ -1,11 +1,11 @@
 import './App.css'
+import Navber from './components/navber/Navber'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-5xl bg-red-400'>Hello world</h1>
-      <p className='btn btn-primary'>fdfs</p>
+      <Navber/>
     </>
   )
 }

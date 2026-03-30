@@ -8,7 +8,7 @@ const Workflow = () => {
                 <p className='text-white font-light text-[12px]'>Join thousands of professionals who are already using Digitools to work smarter.<br/>Start your free trial today.</p>
                 <div className='flex justify-center items-center gap-3'>
                     <button className='btn bg-white text-purple-500 rounded-3xl'>Explore Products</button>
-                    <button className='btn bg-transparent text-white border border-white rounded-3xl'> view Pricing</button>
+                    <button className='btn bg-transparent hover:bg-lime-300 hover:text-black text-white border border-white rounded-3xl'> View Pricing</button>
                 </div>
                 <p className='text-gray-400 text-[12px]'>14-day free trial • No credit card required • Cancel anytime</p>
             </div>

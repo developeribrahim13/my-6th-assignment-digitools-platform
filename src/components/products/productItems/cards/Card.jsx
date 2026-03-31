@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-const Card = ({ items }) => {
+const Card = ({ items, charteAche, setCharteAche }) => {
     return (
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             {
@@ -22,7 +22,7 @@ const Card = ({ items }) => {
                         <li className='flex gap-2 items-center text-sm text-gray-500'><Check color="#0cb017" />{el}</li>
                     ))}
                 </ul>
-                <button className='btn text-white rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full mt-3'>Buy Now</button>
+                <button onClick={()=>setCharteAche([...charteAche,item])} className='btn text-white rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full mt-3'>Buy Now</button>
             </div>
                 ))
             }

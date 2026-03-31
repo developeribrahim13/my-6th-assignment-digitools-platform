@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer'
 import Navber from './components/navber/Navber'
 import PricingSection from './components/pricingSection/PricingSection'
 import StatesSection from './components/statesSection/StatesSection'
+import StepsSection from './components/stepsSection/StepsSection'
 import Workflow from './components/workflow/Workflow'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navber/>
       <Banner/>
       <StatesSection/>
+      <StepsSection/>
       <PricingSection/>
       <Workflow/>
       <Footer/>

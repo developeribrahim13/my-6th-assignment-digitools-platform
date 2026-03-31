@@ -3,7 +3,7 @@ import React from 'react';
 
 const PricingSection = () => {
     return (
-        <div className='max-w-[80%] mx-auto py-32'>
+        <div className='max-w-[80%] mx-auto py-25'>
             <h1 className='text-5xl font-extrabold text-center'>Simple, Transparent Pricing</h1>
             <p className='text-gray-600 text-center mt-4 mb-7'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>

@@ -14,7 +14,7 @@ const Products = ({carteAche,setCarteAche}) => {
     const [clickProduct,setClickProduct] = useState(true);
     
     return (
-        <div className='max-w-[80%] mx-auto mt-20'>
+        <div className='max-w-[90%] sm:max-w-[80%] mx-auto mt-20'>
             <div className=''>
                 <h1 className='text-5xl font-extrabold text-center'>Premium Digital Tools</h1>
                 <p className='text-gray-600 text-center mt-4 mb-3'>Choose from our curated collection of premium digital products designed<br />to boost your productivity and creativity.</p>

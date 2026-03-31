@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/banner/Banner'
 import Footer from './components/footer/Footer'
@@ -9,13 +10,13 @@ import StepsSection from './components/stepsSection/StepsSection'
 import Workflow from './components/workflow/Workflow'
 
 function App() {
-
+const [carteAche,setCarteAche] = useState([]);
   return (
     <>
-      <Navber/>
+      <Navber carteAche={carteAche}/>
       <Banner/>
       <StatesSection/>
-      <Products/>
+      <Products carteAche={carteAche} setCarteAche={setCarteAche}/>
       <StepsSection/>
       <PricingSection/>
       <Workflow/>

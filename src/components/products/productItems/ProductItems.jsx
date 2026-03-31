@@ -1,12 +1,11 @@
 import React, { use } from 'react';
 import Card from './cards/Card';
 
-const ProductItems = ({collectData, charteAche, setCharteAche}) => {
+const ProductItems = ({collectData, carteAche, setCarteAche}) => {
     const items = use(collectData);
-    console.log(items);
     return (
         <div>
-            <Card items={items} charteAche={charteAche} setCharteAche={setCharteAche}/>
+            <Card items={items} carteAche={carteAche} setCarteAche={setCarteAche}/>
         </div>
     );
 };

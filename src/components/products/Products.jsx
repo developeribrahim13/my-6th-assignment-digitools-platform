@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Charts from './charts/Charts';
+import Carts from './carts/Carts';
 import ProductItems from './productItems/ProductItems';
 
 const fetchData = async  () => {
@@ -9,10 +9,10 @@ const fetchData = async  () => {
 
 const collectData = fetchData();
 
-const Products = () => {
+const Products = ({carteAche,setCarteAche}) => {
    
     const [clickProduct,setClickProduct] = useState(true);
-    const [charteAche,setCharteAche] = useState([]);
+    
     return (
         <div className='max-w-[80%] mx-auto mt-20'>
             <div className=''>
@@ -21,10 +21,10 @@ const Products = () => {
             </div>
             <div className="tabs tabs-box justify-center bg-white">
                 <input onChange={()=>setClickProduct(true)} type="radio" name="my_tabs_6" className={`tab text-purple-800 ${clickProduct?"rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white":""}`} aria-label="Products" defaultChecked />
-                <div className="tab-content bg-base-100 mt-8 p-6"><ProductItems collectData = {collectData} charteAche={charteAche} setCharteAche={setCharteAche}/></div>
+                <div className="tab-content bg-base-100 mt-8 p-6"><ProductItems collectData = {collectData} carteAche={carteAche} setCarteAche={setCarteAche}/></div>
 
-                <input onChange={()=>setClickProduct(false)} type="radio" name="my_tabs_6" className={`tab text-purple-800 ${clickProduct?"":"rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`} aria-label={`Chart(${charteAche.length})`} />
-                <div className="tab-content bg-base-100 mt-8 p-6"><Charts charteAche={charteAche} setCharteAche={setCharteAche}/></div>
+                <input onChange={()=>setClickProduct(false)} type="radio" name="my_tabs_6" className={`tab text-purple-800 ${clickProduct?"":"rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`} aria-label={`Chart(${carteAche.length})`} />
+                <div className="tab-content bg-base-100 mt-8 p-6"><Carts carteAche={carteAche} setCarteAche={setCarteAche}/></div>
             </div>
         </div>
     );

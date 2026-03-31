@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
             <hr className='max-w-[80%] mx-auto text-gray-800 mt-8'></hr>
             <div className='text-gray-400 max-w-[80%] mx-auto flex flex-col sm:flex-row justify-between py-3.5 text-[12px]'>
-                <h5>© {new Date().getFullYear} Digitools. All rights reserved.</h5>
+                <h5>© {new Date().getFullYear()} Digitools. All rights reserved.</h5>
                 <div className='flex gap-3'>
                     <a className='hover:text-lime-300 hover:font-bold' href='#'>Privacy Policy</a>
                     <a className='hover:text-lime-300 hover:font-bold' href='#'>Terms of Service</a>

@@ -1,7 +1,7 @@
 import React from 'react';
 import chartImg from '../../assets/products/shopping-cart.png'
 
-const Navber = () => {
+const Navber = ({carteAche}) => {
     return (
         <div className='border-b border-gray-200'>
             <nav className='max-w-[80%] mx-auto flex justify-between items-center py-4'>
@@ -14,7 +14,7 @@ const Navber = () => {
                     <li><a className='hover:bg-linear-[-35deg] from-blue-500 to-purple-700 hover:text-transparent hover:bg-clip-text' href='#'>FAQ</a></li>
                 </ul>
                 <div className='flex justify-between items-center gap-3'>
-                    <div><a href='#'><img className='font-medium' src={chartImg}></img></a></div>
+                    <div className='relative'><a href='#'><img className='font-medium' src={chartImg}></img></a><div className={`${carteAche.length!=0?'absolute z-50 bg-red-400 rounded-full text-white font-medium -top-2 -right-2 w-4 h-4 flex justify-center items-center text-[10px]':""}`}>{`${carteAche.length==0?"":carteAche.length}`}</div></div>
                     <p><a className='font-medium hidden md:flex' href='#'>Login</a></p>
                     <button className='btn text-white rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Get Started</button>
                 </div>

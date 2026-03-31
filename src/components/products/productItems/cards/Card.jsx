@@ -1,11 +1,14 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-const Card = ({ items, charteAche, setCharteAche }) => {
+import { toast } from 'react-toastify';
+const Card = ({ items, carteAche, setCarteAche }) => {
+    
     return (
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             {
-                items.map(item => (
-                    <div className='shadow rounded-2xl p-5 border border-gray-100'>
+                items.map(item => {
+                const Isexist = carteAche.find(el=> el.id==item.id)
+                return (<div className='shadow rounded-2xl p-5 border border-gray-100'>
                 <div className='flex justify-between'>
                     <div className='flex justify-start items-end'>
                         <div className='w-15 h-15 rounded-full shadow flex justify-center items-center'>
@@ -22,9 +25,19 @@ const Card = ({ items, charteAche, setCharteAche }) => {
                         <li className='flex gap-2 items-center text-sm text-gray-500'><Check color="#0cb017" />{el}</li>
                     ))}
                 </ul>
-                <button onClick={()=>setCharteAche([...charteAche,item])} className='btn text-white rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-full mt-3'>Buy Now</button>
+                
+                <button onClick={()=>{
+                    if(!Isexist)
+                    {
+                        setCarteAche([...carteAche,item])
+                        toast.success(`${item.name} is successfuly added in the Chart`)
+                    }
+                    else
+                        toast.error(`${item.name} already exist in the Chart`)
+                        return;
+                }} className={`btn text-white rounded-3xl w-full mt-3 ${Isexist?"bg-green-600":"bg-linear-to-r from-[#4F39F6] to-[#9514FA]"}`}>{Isexist?"Already in Cart ✔":"Buy Now"}</button>
             </div>
-                ))
+                )})
             }
         </div>
     );

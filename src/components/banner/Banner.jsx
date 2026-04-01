@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner.png'
 import playIcon from '../../assets/Play.png'
 const Banner = () => {
     return (
-        <div className='max-w-[95%] sm:max-w-[80%] mx-auto my-16'>
+        <div className='max-w-[85%] sm:max-w-[80%] mx-auto my-16'>
             <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-7'>
                 <div className='space-y-4 flex-7'>
                     <div className='flex justify-start'>

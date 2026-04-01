@@ -4,8 +4,8 @@ const Workflow = () => {
     return (
         <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-20'>
             <div className='text-center space-y-3 px-2.5'>
-                <h1 className='text-white text-[23px] sm:text-3xl font-bold'>Ready to Transform Your Workflow?</h1>
-                <p className='text-white font-light text-[12px]'>Join thousands of professionals who are already using Digitools to work smarter.<br/>Start your free trial today.</p>
+                <h1 className='text-white text-2xl sm:text-3xl font-bold'>Ready to Transform Your Workflow?</h1>
+                <p className='text-white font-light text-[12px]'>Join thousands of professionals who are already using Digitools to work smarter. <br className='hidden min-[480px]:block'/>Start your free trial today.</p>
                 <div className='flex justify-center items-center gap-3'>
                     <button className='btn bg-white text-purple-500 rounded-3xl'>Explore Products</button>
                     <button className='btn bg-transparent hover:bg-lime-300 hover:text-black text-white border border-white rounded-3xl'> View Pricing</button>

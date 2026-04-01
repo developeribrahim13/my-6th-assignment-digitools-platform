@@ -5,7 +5,7 @@ import rocket from "../../assets/rocket.png"
 const StepsSection = () => {
     return (
         <div className='bg-gray-50 py-25 mt-20'>
-            <div className='max-w-[80%] mx-auto space-y-3'>
+            <div className='max-w-[95%] sm:max-w-[80%] mx-auto space-y-3'>
                 <h1 className='text-4xl text-center font-extrabold'>Get Started in 3 Steps</h1>
                 <p className='text-gray-500 text-[12px] text-center'>Start using premium digital tools in minutes, not hours.</p>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8'>

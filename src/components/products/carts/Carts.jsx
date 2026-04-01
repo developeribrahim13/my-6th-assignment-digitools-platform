@@ -11,11 +11,11 @@ const Carts = ({carteAche, setCarteAche}) => {
                {carteAche.map(el=>(
                 <div className='flex justify-between items-center p-4 mb-5 rounded-2xl bg-gray-100'>
                     <div className='flex gap-3 items-center'>
-                    <div className='shadow w-15 h-15 rounded-full flex justify-center items-center'>
+                    <div className='shadow w-10 h-10  sm:w-15 sm:h-15 rounded-full flex justify-center items-center'>
                         <img src={el.icon}></img>
                     </div>
                     <div>
-                        <h3 className='text-lg font-bold'>{el.name}</h3>
+                        <h3 className='text-sm sm:text-lg font-bold'>{el.name}</h3>
                         <p className='text-sm text-gray-500'>${el.price}</p>
                     </div>
                     </div>
